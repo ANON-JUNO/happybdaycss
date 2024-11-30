@@ -1,54 +1,39 @@
 {
-  "name": "auto-messenger-bot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "fb-chat-api",
+  "version": "10.4.19",
+  "description": "A Facebook chat API that doesn't rely on XMPP",
   "scripts": {
-    "start": "node index.js"
+    "test": "mocha",
+    "lint": "./node_modules/.bin/eslint **.js",
+    "prettier": "prettier utils.js src/* --write"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fb-chat-api/fb-chat-api.git"
+  },
+  "keywords": [
+    "facebook",
+    "chat",
+    "api",
+    "fca",
+    "fb-chat-api"
+  ],
+  "bugs": {
+    "url": "https://github.com/fb-chat-api/fb-chat-api/issues"
+  },
+  "author": "Avery, David, Maude, Benjamin, UIRI, NTKhang (rebuild)",
+  "license": "MIT",
   "dependencies": {
-    "@distube/ytdl-core": "^4.13.3",
-    "@types/node": "^18.0.6",
-    "@xaviabot/fb-downloader": "^1.0.14",
-    "1secmail-api": "^1.1.1",
-    "axios": "^1.6.5",
-    "betabotz-tools": "^0.0.7",
     "bluebird": "^2.11.0",
-    "body-parser": "^1.20.2",
-    "chalk": "^3.0.0",
     "cheerio": "^0.22.0",
-    "child_process": "^1.0.2",
-    "express": "^4.18.2",
-    "fs": "^0.0.1-security",
-    "fs-extra": "^11.1.1",
-    "g4f": "^1.4.2",
-    "googleapis": "^133.0.0",
     "https-proxy-agent": "^4.0.0",
-    "javascript-obfuscator": "^4.1.0",
-    "mime-types": "^2.1.35",
-    "moment-timezone": "^0.5.45",
     "mqtt": "^3.0.0",
-    "node-cron": "^3.0.3",
     "npmlog": "^1.2.0",
-    "os": "^0.1.2",
-    "pastebin-api": "^7.0.0",
-    "pastebin-js": "^1.0.6",
-    "pastebin-ts": "^1.3.0",
-    "periodic-table": "^0.0.8",
-    "pidusage": "^3.0.2",
-    "prodia.js": "^2.1.5",
-    "qs": "^6.12.0",
-    "request": "^2.88.2",
-    "rsnchat": "^3.0.9",
-    "simple-youtube-api": "^5.2.1",
-    "util": "^0.12.5",
-    "websocket-stream": "^5.5.0",
-    "xml2js": "^0.6.2",
-    "yt-search": "^2.10.4",
-    "ytdl-core": "^4.11.4"
+    "request": "^2.53.0",
+    "websocket-stream": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=10.x"
   },
   "devDependencies": {
     "eslint": "^7.5.0",
